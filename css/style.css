@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap');
+
+:root {
+    --main-color: #0BF5C7;
+    --black: #000000;
+    --blacky: #a99a9a;
+    --white: #FBFFFF;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    list-style: none;
+    text-decoration: none;
+}
+
+html {
+    background: var(--black);
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header {
+    /* position: absolute; */
+    width: 20%;
+    /* border: 1px solid white; */
+}
+
+/* header nav {
+    display: flex;
+    justify-content: center;
+} */
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.logo {
+    margin: 20px 80px;
+
+}
+
+.nav a {
+    color: var(--white);
+    font-size: 20px;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 4rem;
+    align-items: start;
+}
+
+.navbar a {
+    margin: 5px;
+    padding: 10px;
+}
+
+.button_nav:hover {
+    text-align: start;
+    /* background: var(--blacky); */
+    border-radius: 20px;
+}
