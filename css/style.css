@@ -1,12 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap');
 
-:root {
-    --main-color: #0BF5C7;
-    --black: #000000;
-    --blacky: #a99a9a;
-    --white: #FBFFFF;
-}
-
 * {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -16,60 +9,155 @@
     border: none;
     list-style: none;
     text-decoration: none;
+    color: var(--twitter-background);
 }
 
 html {
-    background: var(--black);
+    background-color: #000;
 }
 
-main {
+body {
+    --twitter-bgcolor: #ffffff;
+    --twitter-color: #50b7f5;
+    --twitter-background: #e6ecf0;
+    --twitter-bgcolor:rgb(166, 221, 237);
+}
+
+.main {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid red; */
+}
+
+.sidebar .fa-twitter{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.sidebar, .fa-twitter {
+    color: #e6ecf0;
+}
+
+.menu-items .material-icons, .fa-twitter-square, .fa-twitter {
+    padding: 20px;
+}
+
+.sidebar .menu-items a {
+    text-decoration: none;
+    color: var(--twitter-background);
+    font-weight: 700;
+    font-size: 18px;
+    margin-right: 20px;
+}
+
+.sidebar-menu:hover {
+    background-color: var(--twitter-color);
+    border-radius: 30px;
+    color: var(--twitter-background) !important;
+    transition: color 100ms ease-out;
+}
+
+.sidebar-tweet {
+    width: 100%;
+    background-color: var(--twitter-color);
+    border: none;
+    color: var(--twitter-background);
+    font-weight: 900;
+    border-radius: 30px;
+    height: 50px;
+    margin-top: 20px;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 10px;
+}
+
+.sidebar {
+    border-right: 1px solid var(--twitter-bgcolor);
+    flex: 0.2;
+    min-width: 250px;
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.feed {
+    flex: 0.6;
+    min-width: fit-content;
+    border-bottom: 0.1mm solid var(--twitter-bgcolor);
+    height: 230px;
+}
+
+.feed-header {
+    margin-left: 40px;
+    position: fixed;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 60px;
+    align-items: center;
+}
+
+.content .material-icons {
+    font-size: 90px;
+}
+
+.content h4 {
+    font-size: 30px;
+    font-weight: 400;
+    color: rgba(190, 198, 205, 0.571);
+}
+
+.feed-link {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-bottom: 1px solid var(--twitter-bgcolor);
+}
+
+.feed-link .active {
+    border-bottom: 2px solid var(--twitter-color);
+}
+
+.link {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-header {
-    /* position: absolute; */
-    width: 20%;
-    /* border: 1px solid white; */
+.link-icon .material-icons {
+    color: #50b7f5;
 }
 
-/* header nav {
+
+.link-items {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.link-btn {
+    background-color: var(--twitter-color);
+    border: none;
+    color: var(--twitter-background);
+    font-weight: 900;
+    border-radius: 30px;
+    height: 30px;
+    padding: 0 10px;
+}
+
+
+
+/* .tweets {
+    background: #d22626;
 } */
-
-.nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-.logo {
-    margin: 20px 80px;
-
-}
-
-.nav a {
-    color: var(--white);
-    font-size: 20px;
-}
-
-.navbar {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding: 0 4rem;
-    align-items: start;
-}
-
-.navbar a {
-    margin: 5px;
-    padding: 10px;
-}
-
-.button_nav:hover {
-    text-align: start;
-    /* background: var(--blacky); */
-    border-radius: 20px;
-}
