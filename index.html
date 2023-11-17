@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Twitter Clone</title>
+    <meta name="description" />
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
@@ -15,142 +15,177 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
+    <title>Twitter Clone</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <div class="main">
-      <!-- sidebar section  -->
+      <!-- Sidebar  -->
       <div class="sidebar">
         <div class="logo">
           <i class="fab fa-twitter"></i>
         </div>
-        <div class="menu-items">
-          <div class="sidebar-menu active">
-            <span class="material-icons">home</span>
-            <a href="#">Home</a>
+        <div class="menu-link">
+          <div class="link-items active">
+            <img src="assets/home.png" alt="" class="icon" />
+            <div class="link">
+              <a href="#">Home</a>
+            </div>
           </div>
-          <div class="sidebar-menu">
-            <span class="material-icons">tag</span>
-            <a href="#">Explore</a>
+          <div class="link-items">
+            <img src="assets/explore.png" alt="" class="icon" />
+            <div class="link">
+              <a href="#">Explore</a>
+            </div>
           </div>
-          <div class="sidebar-menu">
-            <span class="material-icons">notifications</span>
-            <a href="#">Notifications</a>
+          <div class="link-items">
+            <img src="assets/notifications.png" alt="" class="icon" />
+            <div class="link">
+              <a href="#">Notification</a>
+            </div>
           </div>
-          <div class="sidebar-menu">
-            <span class="material-icons">mail</span>
-            <a href="#">Messages</a>
+          <div class="link-items">
+            <img src="assets/message.png" alt="" class="icon" />
+            <div class="link">
+              <a href="#">Messages</a>
+            </div>
           </div>
-          <div class="sidebar-menu">
-            <span class="material-icons">bookmark</span>
-            <a href="#">Bookmarks</a>
+          <div class="link-items">
+            <img src="assets/bookmarks.png" alt="" class="icon" />
+            <div class="link">
+              <a href="#">Bookmarks</a>
+            </div>
           </div>
-          <div class="sidebar-menu">
-            <i class="fab fa-twitter-square" aria-hidden="true"></i>
-            <!-- <i class="fab fa-twitter"></i> -->
-            <a href="#">Twitter Blue</a>
+          <div class="link-items">
+            <img src="assets/twitterblue.png" alt="" class="icon" />
+            <div class="link">
+              <a href="#">Twitter Blue</a>
+            </div>
           </div>
-          <div class="sidebar-menu">
-            <span class="material-icons">person</span>
-            <a href="#">Profile</a>
+          <div class="link-items">
+            <img src="assets/profile.png" alt="" class="icon" />
+            <div class="link">
+              <a href="#">Profile</a>
+            </div>
           </div>
-          <div class="sidebar-menu">
-            <span class="material-icons">pending</span>
-            <a href="#">More</a>
+          <div class="link-items">
+            <img src="assets/more.png" alt="" class="icon" />
+            <div class="link">
+              <a href="#">More</a>
+            </div>
           </div>
+          <button class="btn-tweet">Tweet</button>
         </div>
-        <button class="sidebar-tweet">Tweet</button>
-
         <div class="user">
-          <div class="user-content">
-            <span class="material-icons">account_circle</span>
-          <div class="account">
-            <p class="name">Gloire</p>
-            <p class="name">@glo</p>
-          </div>
-          <div class="info">
-            <span class="point"></span>
-          <span class="material-icons">more_horiz </span>
-          </div>
+          <div class="infos">
+            <div class="user-ico">
+              <img src="assets/avatarico.png" alt="" />
+            </div>
+            <div class="account">
+              <p class="name">Devisa</p>
+              <p class="username">@webdev_issa</p>
+            </div>
+            <div class="menu">
+              <img src="assets/menu.png" alt="" />
+            </div>
           </div>
         </div>
       </div>
-
-      <!-- feed section  -->
       <div class="feed">
-        <div class="feed-header">
-          <h2>Home</h2>
-        </div>
+        <h1 class="feed-header">Home</h1>
         <div class="feed-link bordbo">
-          <div class="link-item active">
-            <h3>For you</h3>
-          </div>
           <div class="link-item">
-            <h3>Following</h3>
+            <div class="fi-link">
+              <a href="#">For you</a>
+              <hr />
+            </div>
+
+            <div class="fi-link">
+              <a href="#" class="hashed">Following</a>
+            </div>
           </div>
-        </div>
-        <div class="feed-tweet">
-          <div class="content">
-            <span class="material-icons">account_circle</span>
-            <h4>What's happening?</h4>
-          </div>
-          <div class="feed-ico">
-            <div class="link-items">
-              <div class="link-icon">
-                <span class="material-icons">wallpaper</span>
-              </div>
-              <div class="link-icon">
-                <span class="material-icons icobor">gif</span>
-              </div>
-              <div class="link-icon">
-                <span class="material-icons">density_large</span>
-              </div>
-              <div class="link-icon">
-                <span class="material-icons">sentiment_satisfied</span>
-              </div>
-              <div class="link-icons">
-                <span class="material-icons">work_history</span>
-              </div>
-              <div class="link-icon">
-                <span class="material-icons">location_on</span>
+          <hr class="new-line" />
+          <div class="feed-tweet">
+            <div class="content">
+              <img src="assets/avatarico.png" class="feed-avatar" alt="" />
+              <div class="ft-content">What's happening?</div>
+            </div>
+            <div class="feed-ico">
+              <div class="feeds-link-items">
+                <div class="link-icon">
+                  <img src="assets/picture.png" alt="" />
+                </div>
+                <div class="link-icon">
+                  <img src="assets/gif.png" alt="" />
+                </div>
+                <div class="link-icon">
+                  <img src="assets/parameter.png" alt="" />
+                </div>
+                <div class="link-icon">
+                  <img src="assets/emoji.png" alt="" />
+                </div>
+                <div class="link-icons">
+                  <img src="assets/date.png" alt="" />
+                </div>
+                <div class="link-icon">
+                  <img src="assets/location.png" alt="" />
+                </div>
+                <button class="feed-link-btn">Tweet</button>
               </div>
             </div>
-            <button class="link-btn">Tweet</button>
-          </div>
-        </div>
-        <div class="tweet-content">
-          <div class="content">
-            <h2>Before you scroll...</h2>
-            <div class="content-data">
-              <p>
-                We're updating our corporate name in our
-                <a href="#">Terms of service</a> and
-                <a href="#">Privacy Policy</a>.
-              </p>
-              <p>Now's a great chance to review them.</p>
-            </div>
-            <button class="btn-tweet-cnt">Got it</button>
-          </div>
-        </div>
-        <div class="post">
-          <div class="p-content">
-            <div class="img-auth">
-              <img src="assets/avatar.png" alt="">
-            </div>
-            <div class="t-content">
-              <div class="auth-det">
-                <p>Gloire SHUKURU BAHATI <span>@Gloire.2H</span></p>
-                <p>HTML CSS: Learning html and css from kLab Academy 2023</p>
+
+          <hr class="new-line1">
+          <div class="twitter-post">
+            <div class="post-content">
+                <span class="material-icons">more_horiz</span>
+
+              <h2>Before you scroll...</h2>
+              <div class="content-data">
+                  We're updating our corporate name in our
+                  <a href="#">Terms of service</a> and
+                  <a href="#">Privacy Policy</a>.
+                <br>
+                Now's a great chance to review them.
               </div>
-              <div class="post-content">
-                <img src="assets/1 image.jpg" alt="">
+              <button class="btn-tweet-cnt">Got it</button>
+            </div>
+          </div>
+
+          <hr class="new-line1">
+          <div class="post">
+            <span class="material-icons">more_horiz</span>
+            <div class="p-content">
+              <div class="img-auth">
+                <img src="assets/avatr.png" alt="">
+                <div class="auth-det">
+                    <p class="p-auth">Akash Chavda <img src="assets/emoj.png" alt=""> <span>@sky_chavda.4H</span></p>
+                    <p>React Interview is Not Just Question & Answer.</p>
+                </div>
               </div>
+              <div class="t-content">
+                
+                <div class="post-details">
+                    <p>It Includes Coding Questions As Well.</p>
+                    <p>I Updated my React Interview Questions Guide with Coding Questions.</p>
+                    <p>If you had it then refresh it you will get it or else</p>
+                    <p>To get it</p>
+                    <ul>
+                        <li>Like</li>
+                        <li>Reply "React</li>
+                        <li>Follow me (so I can DM)</li>
+                    </ul>
+                </div>
             </div>  
+            <div class="post-content">
+              <img src="assets/1 image.jpg" alt="">
+            </div>
+            </div>
+          </div>
           </div>
         </div>
       </div>
-
+      
+      <!-- right bar  -->
       <!-- article  -->
       <div class="rightbar">
         <form action="">
@@ -158,15 +193,15 @@
             <span class="material-icons">
               search
               </span>
-              <input type="search" name="" id="" placeholder="Search...">
+              <input type="search" name="" id="" placeholder="Search twitter">
           </div>
         </form>
 
-        <div class="subscribes">
+        <!-- <div class="subscribes">
           <h3>Subscribe to Premium</h3>
           <p>Subscribe to unlock new features and if eligible, receive a share of ads revenue.</p>
           <button class="subscribe">Subscribe</button>
-        </div>
+        </div> -->
 
         <div class="trends">
           <div class="t-header">
@@ -181,69 +216,105 @@
                   </span>
               </div>
               <div class="title">
-                HTML
+                #Reactjs
               </div>
-              <div class="count">1,664 posts</div>
+              <div class="count">1,809 tweets</div>
             </div>
             <div class="trends-content">
               <div class="t-place">
-                Technology trending
+                Politics - Trending
                 <span class="material-icons">
                   more_horiz
                   </span>
               </div>
               <div class="title">
-                #CSS
+                Uganda
               </div>
-              <div class="count">1,674 posts</div>
+              <div class="count">35,4k Tweets</div>
             </div>
             <div class="trends-content">
               <div class="t-place">
-                Technology trending
+                Trending in Rwanda
                 <span class="material-icons">
                   more_horiz
                   </span>
               </div>
               <div class="title">
-                Javsscript
+                Money
               </div>
-              <div class="count">664 posts</div>
+              <div class="count">1,2M Tweets</div>
             </div>
             <div class="trends-content">
               <div class="t-place">
-                Technology trending
+                Trending in Rwanda
                 <span class="material-icons">
                   more_horiz
                   </span>
               </div>
               <div class="title">
-                React
+                Rusesabagina
               </div>
               <!-- <div class="count">1,664 posts</div> -->
             </div>
             <div class="trends-content">
               <div class="t-place">
-                Technology trending
+                Trending in Rwanda
                 <span class="material-icons">
                   more_horiz
                   </span>
               </div>
               <div class="title">
-                Nodejs
+                Kagame
               </div>
-              <div class="count">164 posts</div>
+              <div class="count">2,731 Tweets</div>
             </div>
             <div class="trends-content">
               <div class="t-place">
-                Technology trending
+                Trending in Rwanda
                 <span class="material-icons">
                   more_horiz
                   </span>
               </div>
               <div class="title">
-                Angular
+                Labor Day
               </div>
-              <!-- <div class="count">1,664 posts</div> -->
+              <div class="count">9,309 Tweets</div>
+            </div>
+            <div class="trends-content">
+              <div class="t-place">
+                Trendind in Rwanda
+                <span class="material-icons">
+                  more_horiz
+                  </span>
+              </div>
+              <div class="title">
+                Kenya
+              </div>
+              <div class="count">62,7 Tweets</div>
+            </div>
+            <div class="trends-content">
+              <div class="t-place">
+                Trendind in Rwanda
+                <span class="material-icons">
+                  more_horiz
+                  </span>
+              </div>
+              <div class="title">
+                1994 genocide
+              </div>
+              <!-- <div class="count">62,7 Tweets</div> -->
+            </div>
+            <div class="trends-content">
+              <div class="t-place">
+                Trendind in Rwanda
+                <span class="material-icons">
+                  more_horiz
+                  </span>
+              </div>
+              <div class="title">
+                Imana
+              </div>
+              <div class="count">2,112 Tweets</div>
             </div>
             <div class="trends-content">
               <div class="t-place">
@@ -255,18 +326,12 @@
               <div class="title">
                 Kigali
               </div>
-              <div class="count">1,664 posts</div>
+              <div class="count">2,556 Tweets</div>
             </div>
           </div>
+          <a href="#" class="show-link">Show more</a>
         </div>
       </div>
     </div>
-
-    <!-- tweets contents  -->
-    <!-- <div class="tweets">
-      <div class="card">
-        <h3>Before you scroll</h3>
-      </div>
-    </div> -->
   </body>
 </html>
