@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap');
-
 @font-face {
     font-family: myFirstFont;
     src: url('./Chirp-Bold.ebb56aba.woff2');
@@ -27,248 +25,296 @@
     color: var(--twitter-background);
 }
 
-html {
+body {
+    max-width: 1380px;
+    margin: 0 auto !important;
+    /* border: 1px solid blue; */
+    float: none;
     background-color: #000;
-    margin: 0 40px;
+    /* overflow: hidden; */
 }
 
 .main {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-}
-
-.sidebar {
-    width: 15%;
+    margin: 0 40px;
+    display: grid;
+    column-gap: 5px;
+    grid-template-columns: 200px auto 300px;
+    /* border: 1px solid red; */
     color: #fff;
-    /* border: 1px solid rebeccapurple; */
-    font-size: 18px;
-    cursor: pointer;
+    font-family: mySecondFont;
 }
 
-.sidebar .logo {
-    margin: 20px;
+.logo {
+    margin: 10px auto 20px 10px;
+    color: #fff;
 }
 
-.sidebar .menu-items  {
-    margin: 20px;
+.logo .fa-twitter {
+    font-size: 20px;
+}
+
+.menu-link {
+    display: block;
+}
+
+.menu-link {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
-.sidebar .menu-items a {
-    margin-left: 10px;
+.link-items {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
 }
 
-.sidebar-menu {
-    margin-top: 10px;
+.link-items:hover {
+    font-family: myFirstFont;
+    font-weight: bold;
 }
 
-.sidebar-tweet {
-    width: 90%;
+.active {
+    font-family: myFirstFont;
+    font-weight: bold;
+}
+
+.btn-tweet {
+    width: 80%;
     background-color: #50b7f5;
     font-weight: 900;
     border-radius: 30px;
-    height: 50px;
-    margin: 10px auto;
+    height: 40px;
+    margin: 10px auto auto -10px;
     cursor: pointer;
+    font-size: 16px;
 }
 
 .user {
-    height: 350px;
-  display: flex;
-  align-items: flex-end;
-  border: 1px solidred;
-}
-
-.user-content {
+    height: 500px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    align-items: flex-end;
+    
 }
 
-.user .user-content .name {
-    font-size: 13px;
+.infos {
+    display: flex;
 }
 
-.user-content .material-icons {
-    position: relative;
-    margin-left: 40px;
+.account {
+    font-family: myFirdFont;
+    font-size: 12px;
+    padding-left: 10px;
 }
 
-.info .material-icons {
-    margin-top: -20px;
-}
-
-.point:before {
-    content: ' \25CF';
-    font-size: 6px;
-    color: #50b7f5;
-    margin-left: 50px;
+.menu img {
+    margin-left: 30px;
     margin-top: -10px;
 }
 
+/* ends header style  */
 
-/**********************************************/
 .main .feed {
     border-left: 0.1ch solid rgba(220, 220, 220, 0.553);
     border-right: 0.1ch solid rgba(220, 220, 220, 0.553);
 }
 
-.feed {
-    width: 60%;
-    color: #fff;
-}
-
-.feed .feed-header {
-    margin-top: 20px;
+.feed-header {
+    margin-top: 10px;
     padding: 0 80px;
     font-size: 20px;
     font-family: myFirstFont;
     font-weight: 900;
 }
 
-.feed .feed-link {
-    margin-top: 20px;
-}
-
-.bordbo {
-    border-bottom: 0.1ch solid rgba(220, 220, 220, 0.553);
-    padding: 0 60px;
-}
-
 .feed-link {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    /* padding: 10px 60px; */
+    flex-direction: column;
 }
 
-.active {
-    padding: 10px 0;
-    border-bottom: 2px solid #50b7f5;
+.link-item {
+    margin-top: 25px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 14px;
+    font-family: mySecondFont;
+    /* border-bottom: 0.1ch solid rgba(220, 220, 220, 0.553); */
+}
+
+.link-item hr {
+    margin-top: 10px;
+    height: 4px;
+    background-color: #50b7f5;
+    /* border: none; */
+}
+
+.new-line {
+    margin-top: -10px;
+    height: 1px;
+    background-color: rgba(220, 220, 220, 0.553);
+}
+
+.hashed {
+    color: rgba(220, 220, 220, 0.553);
 }
 
 .feed-tweet {
-    color: #fff;
     display: flex;
     flex-direction: column;
-    border-bottom: 0.1ch solid rgba(220, 220, 220, 0.553);
 }
 
 .content {
+    /* margin: 20px; */
+    padding: 20px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    color: #ffffffb0;
-    padding: 10px 40px;
+    text-align: center;
 }
 
-.content .material-icons {
-    font-size: 70px;
+.content img {
+    width: 40px;
 }
 
-.content h4 {
+.ft-content {
+    padding: 10px;
+    color: rgba(220, 220, 220, 0.553);
     font-size: 20px;
-    font-weight: lighter;
 }
 
-.feed-ico {
-   padding: 10px 60px 10px 100px;
-   display: flex;
-   flex-direction: row;
-   justify-content: space-between;
-}
-
-.link-items {
-    /* border: 1px solid red; */
-    width: 50%;
+.feeds-link-items {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    color: #50b7f5;
-    font-weight: 500;
+    margin-left: 70px;
+    /* justify-content: space-between; */
 }
 
-.icobor {
-    border: 1px solid #50b7f5;
+.link-ico img {
+    width: 80px;
 }
 
-.link-btn {
-    width: 10%;
+.feed-link-btn {
+    width: 90px;
     background-color: #50b7f5;
     font-weight: 900;
     border-radius: 30px;
-    height: 30px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: 40px;
     cursor: pointer;
+    font-size: 14px;
 }
 
-.tweet-content {
-    border-bottom: 0.1ch solid rgba(220, 220, 220, 0.553);
+.new-line1 {
+    margin-top: 10px;
+    height: 1px;
+    background-color: rgba(220, 220, 220, 0.553);
 }
 
-.tweet-content .content {
-    display: inline;
+.twitter-post {
+    padding: 20px;
 }
 
-.tweet-content .content h2 {
-    padding: 0 60px;    
-    font-size: 30px;
-    font-family: myFirstFont;
-    font-weight: 900;
-    color: #fff;
+.twitter-post .material-icons {
+    float: right;
+    color: rgba(220, 220, 220, 0.553);
 }
 
 .content-data {
-    padding: 20px 60px;    
-}
-
-.content-data p {
-    padding: 5px 0;
+    color: rgba(220, 220, 220, 0.553);
+    font-size: 16px;
+    padding-top: 10px;
 }
 
 .content-data a {
-    color: blue
+    color: blue;
 }
 
 .btn-tweet-cnt {
-    width: 10%;
-    margin: 0 60px 20px 60px;
+    width: 90px;
     background-color: #fff;
     color: #000;
     font-weight: 900;
     border-radius: 30px;
-    height: 50px;
+    padding: 10px;
+    margin-left: auto;
+    margin-top: 30px;
     cursor: pointer;
+    font-size: 14px;
 }
 
 .post {
-    border-bottom: 0.1ch solid rgba(220, 220, 220, 0.553);
     padding: 20px;
 }
 
-.p-content {
-    display: grid;
-  column-gap: 20px;
-  grid-template-columns: 50px auto;
+.post .material-icons {
+    float: right;
+    color: rgba(220, 220, 220, 0.553);
 }
 
-.img-auth img {
-    width: 100%;
-    border-radius: 60%;
+.img-auth {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.auth-det {
+    margin-top: 10px;
+}
+
+.p-content img {
+    width: 60px;
+}
+
+
+.p-auth img {
+    width: 15px;
+}
+
+.auth-det span {
+    color: rgba(220, 220, 220, 0.553);
+}
+
+.t-content {
+    margin-left: 60px;
+}
+
+.post-details p {
+    padding-top: 10px;
+}
+
+ul {
+    list-style: none;
+    font-size: 14px;
+}
+
+ul li::before {
+    content: "+";
+    list-style: symbols(+);
+    color: #fff;
+    font-weight: bold;
+    display: inline-block;
+    width: 1rem;
+    margin-left: -1rem;
+    font-size: 12px;
 }
 
 .post-content img {
-    margin-top: 20px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    width: 80%;
     border-radius: 20px;
-    width: 90%;
 }
 
+/* rightbar  */
 .rightbar {
-    width: 30%;
-    margin: 20px auto;
-    /* border: 1px red solid; */
+    margin-top: 5px;
 }
 
 .form-control {
@@ -281,8 +327,8 @@ html {
 }
 
 .form-control .material-icons {
-    color: #fff;
-    font-size: 30px;
+    color: rgba(220, 220, 220, 0.553);
+    /* font-size: 30px; */
     margin: auto;
 }
 
@@ -344,9 +390,14 @@ input {
 .count {
     color: #ffffff9a;
     font-weight: 100;
+    padding-top: 5px;
 }
 
 .trends-content {
     padding: 10px 10px;
     margin: 5px 0;
+}
+
+.show-link {
+    color: rgb(5, 114, 198);
 }
